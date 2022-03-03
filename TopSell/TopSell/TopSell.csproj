@@ -1,0 +1,75 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\Fonts\FontAwesome.otf" />
+    <None Remove="Resources\Fonts\Icon8FontIcon.ttf" />
+    <None Remove="Resources\Fonts\materialicon.ttf" />
+    <None Remove="Resources\Fonts\robotoblack.ttf" />
+    <None Remove="Resources\Fonts\robotolight.ttf" />
+    <None Remove="Resources\Fonts\robotomedium.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Fonts\FontAwesome.otf" />
+    <EmbeddedResource Include="Resources\Fonts\Icon8FontIcon.ttf" />
+    <EmbeddedResource Include="Resources\Fonts\materialicon.ttf" />
+    <EmbeddedResource Include="Resources\Fonts\robotoblack.ttf" />
+    <EmbeddedResource Include="Resources\Fonts\robotolight.ttf" />
+    <EmbeddedResource Include="Resources\Fonts\robotomedium.ttf" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="6.3.0" />
+    <PackageReference Include="CarouselView.FormsPlugin" Version="6.0.0" />
+    <PackageReference Include="FirebaseDatabase.net" Version="4.0.7" />
+    <PackageReference Include="Microsoft.Net.Http" Version="2.2.29" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Plugin.FirebasePushNotification" Version="3.4.1" />
+    <PackageReference Include="Plugin.LocalNotification" Version="9.2.0" />
+    <PackageReference Include="Rg.Plugins.Popup" Version="2.1.0" />
+    <PackageReference Include="Sharpnado.Tabs" Version="2.2.0" />
+    <PackageReference Include="Xam.Plugin.Connectivity" Version="4.0.0.190-beta" />
+    <PackageReference Include="Xam.Plugin.LatestVersion" Version="2.1.0" />
+    <PackageReference Include="Xam.Plugin.Media" Version="5.1.1-beta" />
+    <PackageReference Include="Xam.Plugin.TabView" Version="1.1.1" />
+    <PackageReference Include="Xam.Plugins.Settings" Version="4.1.0-beta" />
+    <PackageReference Include="Xamarin.CommunityToolkit" Version="1.2.0" />
+    <PackageReference Include="Xamarin.FFImageLoading" Version="2.4.11.982" />
+    <PackageReference Include="Xamarin.FFImageLoading.Forms" Version="2.4.11.982" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />  
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.1" />  
+    <PackageReference Include="Xamarin.Forms.PancakeView" Version="2.3.0.763-beta" />  
+    <PackageReference Include="Xamarin.Forms.Skeleton" Version="2.0.0" />  
+    <PackageReference Include="Xamarin.MediaGallery" Version="2.1.1" />  
+    <PackageReference Include="Xamarin.MediaGallery.Permision" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Views\MainView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Page1.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Page2.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Page3.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Page4.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Page5.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\PopupAlertLogin.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>

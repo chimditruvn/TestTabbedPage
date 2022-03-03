@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:views="clr-namespace:TopSell.Views"
+            BackgroundColor="#fff"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            android:TabbedPage.BarItemColor="#393f57"
+            xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+            android:TabbedPage.BarSelectedItemColor="#00AA13"
+            x:Name="TbPage"
+            x:Class="TopSell.Views.MainView">
+    <!--Pages can be added as references or inline-->
+    <views:Page1 Title="Page 1" IconImageSource="homeicon" BackgroundColor="#f7f7f7"/>
+    <views:Page2 Title="Page 2" IconImageSource="manageorder" BackgroundColor="#fff"/>
+    <views:Page3 Title="Page 3" IconImageSource="feeds" BackgroundColor="#fff"/>
+    <views:Page4 Title="Page 4" IconImageSource="moneys" BackgroundColor="#fff"/>
+    <views:Page5 Title="Page 5" IconImageSource="accounticon" BackgroundColor="#fff"/>
+</TabbedPage>

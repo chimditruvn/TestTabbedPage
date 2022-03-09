@@ -6,7 +6,6 @@
             android:TabbedPage.BarItemColor="#393f57"
             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
             android:TabbedPage.BarSelectedItemColor="#00AA13"
-            x:Name="TbPage"
             x:Class="TopSell.Views.MainView">
     <!--Pages can be added as references or inline-->
     <views:Page1 Title="Page 1" IconImageSource="homeicon" BackgroundColor="#f7f7f7"/>

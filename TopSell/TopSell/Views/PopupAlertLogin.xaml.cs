@@ -36,13 +36,8 @@ namespace TopSell.Views
 
         private void close_Tapped(object sender, EventArgs e)
         {
+            MessagingCenter.Send<object, int>(this, "Navigation", MainView.index);// if you want to navigation to the specific page .
             PopupNavigation.Instance.PopAllAsync();
-
-            //var tab = (TabbedPage)Application.Current.MainPage;
-            //tab.CurrentPage = tab.Children[0];
-
-            var mainPage = this.Parent as TabbedPage;
-            mainPage.CurrentPage = mainPage.Children[4];
         }
 
     }

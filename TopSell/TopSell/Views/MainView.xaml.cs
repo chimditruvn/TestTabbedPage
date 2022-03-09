@@ -14,13 +14,20 @@ namespace TopSell.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MainView
     {
+        public static int index { get; set; }
         public MainView(int index)
         {
+            InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
             InitializeComponent();
             On<Xamarin.Forms.PlatformConfiguration.Android>().SetToolbarPlacement(ToolbarPlacement.Bottom);
             //CurrentPage = Children[0];
-            SetPage(index);
+            MessagingCenter.Subscribe<Object, int>(this, "Navigation", (arg, idx) =>
+            {
+                // idx: the index of pages in tabbed that you want to navigate
+                CurrentPage = this.Children[idx];
+
+            });
         }
         void SetPage(int index)
         {
@@ -42,6 +49,11 @@ namespace TopSell.Views
             if (CurrentPage is Page5)
             {
                 PopupAlertLogin();
+            }
+            else
+            {
+                index = Children.IndexOf(CurrentPage);
+
             }
             //else if (CurrentPage is ExplorePage)
             //{
